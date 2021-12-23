@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  -ff-primary: "Raleway", sans-serif;
+  /* Colors */
+  /* Primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
+  --ff-primary: "Raleway", sans-serif;
+}
+
+.appNav {
+  font-family: var(--ff-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  margin-inline: auto;
+  width: min(90%, 74.5rem);
+  /* trbl */
+}
+.appNav > div > img {
+  width: 125px;
+}
+.navlist {
+  list-style: none;
+}
+.navlist > a > .listItem {
+  color: var(--very-dark-blue);
+  display: inline-block;
+  align-items: center;
+  padding-left: 0.6em;
+  font-size: 0.9em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 40em) {
+  .navlist .listItem li a {
+    padding-left: 4em;
+  }
+}

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  /* Primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
+  --ff-primary: "Raleway", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+}
+
+.body {
+  font-family: var(--ff-body);
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 74.5rem);
+
+  color: var(--desaturated-blue);
+  font-size: 19px;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.splitReverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroHeading {
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.heroP {
+  font-family: var(--ff-body);
+  font-size: 1em;
+}
+.emailForm::placeholder {
+  /* color: hsl(0, 0%, 75%); */
+  color: var(--light-gray);
+  padding: 10px;
+}
+.emailCheck {
+  border: 1px solid red;
+}
+.emailSent {
+  font-size: 0.7em;
+  display: inline-block;
+  color: red;
+}
+.features2bg {
+  background-color: var(--light-grayish-blue);
+}
+.featuresp {
+  font-family: var(--ff-body);
+  text-align: left;
+  margin-top: 1em;
+}
+.curve {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5em;
+}
+.feature2heading {
+  font-family: var(--ff-primary);
+  margin-top: 5em;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+.greenlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  padding-bottom: 0.7em;
+}
+.greenlink > div > a {
+  color: var(--moderate-cyan);
+  border-bottom: solid var(--moderate-cyan) 1px;
+}
+.iconarrow {
+  margin-left: 0.5em;
+}
+
+.testimonialContainer {
+  background-color: white;
+  margin: 3em 1.5em 3em 1.5em;
+  padding: 1.8em;
+  text-align: left;
+  font-size: 0.65em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.1);
+}
+.testimonialContainer > img {
+  margin-bottom: 1em;
+}
+.testimonialContainer > p {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.testimonialAvatar {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.ceo {
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ceo > div > .ceoname {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0.3em;
+}
+.ceo > div > .ceotitle {
+  font-size: 0.7em;
+}
+
+.earlyAccess {
+  background-color: var(--desaturated-blue);
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+.earlyAccess > * {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: var(--light-grayish-blue);
+}
+.earlyAccess > div > div > div > h2 {
+  font-family: var(--ff-primary);
+  font-size: 1.2em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+.earlyAccess > div > div > div > div > div > input {
+  width: 18.75em;
+}
+.earlyAccess > div > div > div > div > div > button {
+  width: 18.75em;
+  margin-bottom: 2.5em;
+}
+.earlyAccessP {
+  font-size: 0.7em;
+}
+
+input {
+  margin-top: 2.5em;
+  padding: 1em 1.5em 1em 1.5em;
+  width: 100%;
+  display: block;
+  width: 25em;
+}
+input::placeholder {
+  color: var(--light-gray);
+}
+
+button {
+  background-color: var(--bright-blue);
+  border: none;
+  color: var(--light-grayish-blue);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  padding: 1em 1.5em 1em 1.5em;
+  width: 25em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .container {
+    text-align: left;
+  }
+  .splitReverse {
+    flex-direction: row;
+  }
+  .splitReverse > * + * {
+    margin-left: 5em;
+    margin-right: 5em;
+    justify-content: flex-start;
+  }
+  .split {
+    flex-direction: row;
+  }
+  .heroP {
+    font-size: 0.9em;
+  }
+  .feature2heading {
+    margin-top: 1em;
+    font-size: 1.65em;
+    margin-bottom: 1em;
+  }
+  .featuresp {
+    font-size: 0.8em;
+  }
+  .greenlink {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .testimonialContainer {
+    background-color: white;
+    margin: 3em 15em 3em 0em;
+    text-align: left;
+    font-size: 0.7em;
+    box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.1);
+  }
+  .earlyAccessForm {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .earlyAccessForm > div > button {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 13em;
+  }
+  .earlyAccessDescription {
+    margin-right: 15em;
+  }
+  .earlyAccess > div > div > div > h2 {
+    font-family: var(--ff-primary);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  button {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 15em;
+  }
+}

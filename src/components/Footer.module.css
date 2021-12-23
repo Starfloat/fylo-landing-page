@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --ff-primary: "Raleway", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  padding-top: 3em;
+  margin-inline: auto;
+  width: min(90%, 74.5rem);
+}
+
+.split {
+  display: flex;
+}
+.split > * {
+  margin-top: 1.5em;
+  margin-left: 2em;
+}
+
+.footer {
+  font-family: var(--ff-primary);
+  background-color: var(--very-dark-blue);
+  color: var(--light-grayish-blue);
+}
+
+.logo {
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.navlist {
+  list-style: none;
+}
+
+.list1 {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.navlist > .list1 > li {
+  margin-top: 1em;
+}
+a {
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--desaturated-blue);
+}
+.list2 {
+  margin-bottom: 3em;
+}
+.navlist > .list2 > li {
+  margin-bottom: 1em;
+}
+
+.socialIcons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+}
+.socialIcons > li {
+  margin-right: 1em;
+}
+.socialIcons > li > a {
+  text-decoration: none;
+}
+.socialIcons > li > a > i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+.socialIcons > li > a > i:hover {
+  color: var(--desaturated-blue);
+  border: 1px solid var(--desaturated-blue);
+}
+
+@media (min-width: 40em) {
+  .container {
+    padding-top: 1.5em;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navlist {
+    margin-top: 11em;
+  }
+  .list1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  .socialIcons {
+    margin-top: 8em;
+  }
+}
